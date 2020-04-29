@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE);
 
-
         mBtnRoll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
