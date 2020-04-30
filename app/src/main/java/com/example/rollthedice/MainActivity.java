@@ -4,10 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -20,13 +25,29 @@ public class MainActivity extends AppCompatActivity {
     private Random random;
     private int randomInt;
     private Vibrator vibrator;
+    private LayoutInflater inflater;
+    private View layout;
+    private TextView mToastText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        inflater = getLayoutInflater();
+        layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.customToast));
+        mToastText = layout.findViewById(R.id.txToast);
+        mToastText.setText("Tap Anywhere");
+        Toast toast = new Toast(getApplicationContext());
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+        toast.show();
+
+
         mBtnRoll = findViewById(R.id.btn_roll);
+        mBtnRoll.setBackgroundColor(Color.TRANSPARENT);
+
+
         mDice1 = findViewById(R.id.dice1);
         mDice2 = findViewById(R.id.dice2);
         mDice3 = findViewById(R.id.dice3);
