@@ -98,16 +98,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice1.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
@@ -122,16 +122,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice2.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
@@ -146,16 +146,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice3.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
@@ -170,16 +170,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice4.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
@@ -194,16 +194,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice5.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
@@ -218,16 +218,16 @@ public class MainActivity extends AppCompatActivity {
 
         mDice6.addAnimatorListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mBtnRoll.setEnabled(false);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mBtnRoll.setEnabled(true);
             }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-                mBtnRoll.setEnabled(false);
-            }
         });
     }
 
