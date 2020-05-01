@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //custom Toast using inflater
+
         inflater = getLayoutInflater();
         layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.customToast));
         mToastText = layout.findViewById(R.id.txToast);
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mBtnRoll = findViewById(R.id.btn_roll);
-        mBtnRoll.setBackgroundColor(Color.TRANSPARENT);
+        mBtnRoll.setBackgroundColor(Color.TRANSPARENT); // invisible button
 
 
         mDice1 = findViewById(R.id.dice1);
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mDice5 = findViewById(R.id.dice5);
         mDice6 = findViewById(R.id.dice6);
 
-        vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE); //vibrate when button pressed
 
         mBtnRoll.setOnClickListener(new View.OnClickListener() {
             @Override
