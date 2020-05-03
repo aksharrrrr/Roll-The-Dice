@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         mToastText = layout.findViewById(R.id.txToast);
         mToastText.setText("Tap Anywhere");
         Toast toast = new Toast(getApplicationContext());
-        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
         toast.show();
 
